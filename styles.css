@@ -1,18 +1,60 @@
+:root {
+    --primary: hsl(44, 34%, 88%);
+    --secondary: #c1b9a9e5;
+    --black: #28222a;
+}
+
+
+
 * {
     box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 body {
     display: flex;
+    margin: 0;
 }
 
-img {
-    width: 100%;
-}
 #sideBar {
     width: 35vw;
 }
 
+.container {
+    height: 100vh;
+    background: url("images/jennifer-chen-y9ml2Lcrgqw-unsplash.jpg");
+    background-size: cover;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1 {
+    margin-top: 21vh;
+    font-weight: 900;
+    font-size: 6rem;
+    color: var(--black);
+}
+
+a {
+    color: inherit;
+}
+#credit {
+    color: var(--primary);
+    text-decoration: none;
+    margin:1rem;
+    font-size: 0.8rem;
+}
+
+.aux {
+    padding-left: 3rem;
+
+}
+
+.aux p {
+    font-size:3rem;
+}
 main {
     flex-grow: 2;
     flex-shrink: 0;
@@ -23,20 +65,56 @@ main {
     align-items: flex-start;
     flex-wrap: wrap;
     flex-basis: 60vw;
-    padding: 4rem;
-    gap: 9rem;
-    background-color:aliceblue
+    gap: 4rem;
+    background-color: var(--primary);
 }
+
 
 #middle {
-width: 100%;
-}
-
-fieldset {
-    border: none;
+    background-color: var(--secondary);
+    width: 100%;
+    padding: 3rem;
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    box-shadow: 0px 3px 4px -2px rgba(0,0,0,0.36);
+    -webkit-box-shadow: 0px 3px 4px -2px rgba(0,0,0,0.36);
+    -moz-box-shadow: 0px 3px 4px -2px rgba(0,0,0,0.36);
+    border-radius: 0.32rem;
+
 }
 
+#myForm {
+    display:flex;
+    gap: 2.65rem;
+}
 
+.column {
+    display: flex;
+    flex-flow: column;
+}
+
+legend {
+    position: relative;
+    font-size: 1.6rem;
+    top: -22px;
+    border-right: 1px solid var(--black);
+    padding-right: 1rem;
+}
+
+label {
+    font-weight: 500;
+    color: var(--black);
+    padding: 0.3rem 0;
+}
+
+.column input[type="password"],
+.column input[type="text"],
+.column input[type="number"],
+.column input[type="email"] {
+    height: 1.8rem;
+    background-color: var(--primary);
+    border: 1px solid var(--secondary);
+    margin-bottom: 0.32rem;
+    margin-top: 0.2rem;
+    border-radius: 0.24rem;
+    padding: 0 1rem ;
+}
