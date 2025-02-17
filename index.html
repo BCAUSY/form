@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sigmar&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-up form</title>
@@ -22,11 +25,11 @@
             <legend>Let's start!</legend>
             <div class="column">
                 <label for="name" >First name</label>
-                <input type="text" id="name">
+                <input type="text" id="name" required>
                 <label for="email">email</label>
-                <input id="email" type="email">
+                <input id="email" type="email" required>
                 <label for="password">password</label>
-                <input id="password" type="password">
+                <input id="password" type="password" required>
             </div>
             <div class="column">
                 <label for="lname">Last name</label>
@@ -34,13 +37,13 @@
                 <label for="phone">phone number</label>
                 <input id="phone" type="text" />
                 <label for="confirmpass">confirm password</label>
-                <input id="confirmpass" type="password" />
+                <input id="confirmpass" type="password" required/>
             </div>
             </form>
         </section>
         <section class="aux">
             <button id="submit" type="submit">CREATE ACCOUNT</button>
-            <div class="link">Already have an account?<a href="onet.pl">Log in</a></div>
+            <div class="link">Already have an account?<a href="onet.pl">log in</a></div>
         </section>
     </main>
 </body>
